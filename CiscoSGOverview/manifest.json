@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2.0,
+  "id": "cisco_sg_overview",
+  "type": "widget",
+  "name": "Cisco SG Overview",
+  "namespace": "CiscoSGOverview",
+  "version": "1.0.0",
+  "author": "YoelYoestar",
+  "description": "Panel interactivo para switches Cisco SG200-26P con frontal de 26 puertos, estado de enlaces y consumo.",
+  "actions": {
+    "widget.cisco_sg_overview.view": {
+      "class": "WidgetView"
+    }
+  },
+  "widget": {
+    "name": "Cisco SG Overview",
+    "size": {
+      "width": 18,
+      "height": 10
+    },
+    "form_class": "WidgetForm",
+    "js_class": "WidgetCiscoSGOverview",
+    "use_time_selector": false,
+    "refresh_rate": 60
+  },
+  "assets": {
+    "css": ["widget.css"],
+    "js": ["class.widget.js"]
+  }
+}
